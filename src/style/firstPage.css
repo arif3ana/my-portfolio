@@ -1,0 +1,138 @@
+@media only screen and (min-width: 600px) {
+  .firstPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .photo-profile {
+    background: #d9d9d9;
+    opacity: 0.9;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+  }
+
+  .main-profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-text {
+    text-align: center;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+
+  .main-text .hi {
+    font-size: 38px;
+  }
+
+  .tag {
+    color: #828282;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+  .article {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .icons {
+    position: absolute;
+    display: flex;
+    left: 87px;
+    top: 700px;
+    gap: 60px;
+  }
+
+  .icons a {
+    color: #828282;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .firstPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .photo-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    background: #d9d9d9;
+    opacity: 0.9;
+  }
+
+  .main-text {
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-style: normal;
+    opacity: 0.9;
+  }
+
+  .main-text .hi {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .tag {
+    color: #828282;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+  .article {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 13px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .icons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100%;
+  }
+  .icons a {
+    color: #828282;
+  }
+}
