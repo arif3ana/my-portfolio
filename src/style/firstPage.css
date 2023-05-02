@@ -5,7 +5,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
+    margin-bottom: 20%;
   }
+
   .photo-profile {
     background: #d9d9d9;
     opacity: 0.9;
@@ -43,6 +45,7 @@
     text-align: center;
     align-items: center;
     opacity: 0.9;
+    margin-bottom: 40px;
   }
 
   .article {
@@ -53,13 +56,12 @@
     align-items: center;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 8%;
   }
 
   .icons {
-    position: absolute;
     display: flex;
-    left: 87px;
-    top: 700px;
+    width: 100%;
     gap: 60px;
   }
 

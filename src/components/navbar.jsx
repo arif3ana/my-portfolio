@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
 
         <div className='navbar-nav ms-auto'>
-          <a className='nav-link text-white' href='#'>
+          <a className='nav-link text-white' href='#about'>
             About
           </a>
           <a className='nav-link text-white' href='#'>
