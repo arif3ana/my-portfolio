@@ -8,16 +8,13 @@
     margin-bottom: 10%;
   }
 
-  .photo-profile {
-    background: #d9d9d9;
+  .main-profile {
     opacity: 0.9;
     border-radius: 50%;
     border: 1px solid whitesmoke;
-  }
-
-  .main-profile {
     width: 200px;
     height: 200px;
+    border-radius: 50%;
   }
 
   .main-text {
@@ -80,9 +77,9 @@
     margin-top: 30px;
   }
 
-  .photo-profile {
-    width: 80px;
-    height: 80px;
+  .main-profile {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 1px solid whitesmoke;
     background: #d9d9d9;

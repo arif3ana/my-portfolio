@@ -10,7 +10,7 @@ export default function Projects() {
             <img src={web} className='card-img-top' alt='Website developer' />
             <div className='card-body'>
               <h5 className='card-title'>Card title</h5>
-              <a href='#'>Detail project</a>
+              <a href='#detail'>Detail project</a>
             </div>
           </div>
         ))}

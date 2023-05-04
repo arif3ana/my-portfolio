@@ -16,7 +16,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
-    line-height: 62px;
+    line-height: auto;
   }
 
   .card-projects {
