@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
-    line-height: 62px;
+    line-height: auto;
     align-items: center;
     text-align: center;
   }
@@ -22,9 +22,9 @@
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 18px;
-    line-height: 23px;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-size: 20px;
+    line-height: auto;
     width: 80%;
   }
 
@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 22px;
+    line-height: auto;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -54,7 +54,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 31px;
+    line-height: auto;
     list-style: none;
     align-items: center;
     text-align: center;
@@ -76,7 +76,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 26px;
+    line-height: auto;
   }
 
   .about-article {
@@ -84,9 +84,9 @@
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 11px;
-    line-height: 14px;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-size: 12px;
+    line-height: auto;
   }
 
   .title-skill {
@@ -94,7 +94,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    line-height: 15px;
+    line-height: auto;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -113,7 +113,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: auto;
     list-style: none;
     align-items: center;
     text-align: center;

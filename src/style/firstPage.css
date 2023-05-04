@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
   .photo-profile {
@@ -26,7 +26,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    line-height: 60px;
+    line-height: auto;
     color: #ffffff;
     letter-spacing: 4px;
     opacity: 0.9;
@@ -39,7 +39,7 @@
   .tag {
     color: #828282;
     font-size: 32px;
-    line-height: 42px;
+    line-height: auto;
     font-weight: 500;
     font-style: normal;
     text-align: center;
@@ -49,10 +49,10 @@
   }
 
   .article {
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     font-style: normal;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: auto;
     align-items: center;
     text-align: center;
     color: #ffffff;
@@ -94,7 +94,7 @@
     align-items: center;
     margin-top: 10px;
     font-weight: bold;
-    line-height: 26px;
+    line-height: auto;
     color: #ffffff;
     letter-spacing: 2px;
     font-style: normal;
@@ -109,7 +109,7 @@
   .tag {
     color: #828282;
     font-size: 14px;
-    line-height: 18px;
+    line-height: auto;
     font-weight: 500;
     font-style: normal;
     text-align: center;
@@ -118,10 +118,10 @@
   }
 
   .article {
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     font-style: normal;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: auto;
     align-items: center;
     text-align: center;
     color: #ffffff;

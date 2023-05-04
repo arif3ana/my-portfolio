@@ -25,7 +25,7 @@ export default function Navbar() {
           <a className='nav-link text-white' href='#about'>
             About
           </a>
-          <a className='nav-link text-white' href='#'>
+          <a className='nav-link text-white' href='#projects'>
             Project
           </a>
           <a className='nav-link text-white' href='#'>

@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-/* .container {
-  border: 1px solid white;
-} */
+#about {
+  padding-top: 62px;
+}
