@@ -18,13 +18,13 @@ export default function FirstPage() {
       </p>
 
       <div className='icons'>
-        <a href='#'>
+        <a href='https://instagram.com/arf.3ana'>
           <i className='bi bi-instagram'></i>
         </a>
-        <a href='#'>
+        <a href='https://linkedin.com/in/arif-triana-48bb74254'>
           <i className='bi bi-linkedin'></i>
         </a>
-        <a href='#'>
+        <a href='https://github.com/arif3ana'>
           <i className='bi bi-github'></i>
         </a>
       </div>

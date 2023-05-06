@@ -12,13 +12,13 @@ export default function Navbar() {
         </div>
 
         <div className='navbar-nav ms-auto'>
-          <a className='nav-link text-white' href='#about'>
+          <a className='nav-link ' href='#about'>
             About
           </a>
-          <a className='nav-link text-white' href='#Projects'>
+          <a className='nav-link ' href='#Projects'>
             Projects
           </a>
-          <a className='nav-link text-white' href='#Contact'>
+          <a className='nav-link ' href='#Contact'>
             Contact
           </a>
         </div>

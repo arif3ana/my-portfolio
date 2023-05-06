@@ -1,23 +1,18 @@
 import React from "react";
 import dumy from "../img/dumy.jpg";
-export default function PAgeReview() {
+export default function PAgeReview({ ...props }) {
   return (
     <div className='review'>
       <h3 className='title'>"</h3>
       <div className='content'>
-        <img src={dumy} alt='' />
+        <img src={!props.image ? dumy : props.image} alt={props.position} />
         <div className='article-review'>
           <p>testimonial</p>
           <h3 className='title-page'>Client Review</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
-          </p>
+          <p>{props.content}</p>
           <hr />
-          <h4 className='client-name'>Client Name</h4>
-          <p>Position | Company name</p>
+          <h4 className='client-name'>{props.name}</h4>
+          <p>{props.position}</p>
         </div>
       </div>
     </div>

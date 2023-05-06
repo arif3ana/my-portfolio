@@ -46,7 +46,7 @@
   }
 
   .card:not(:first-child) {
-    margin-left: -140px;
+    margin-left: -150px;
   }
 
   .card:hover {
@@ -76,15 +76,82 @@
     color: #828282;
   }
 
-  .card-body a {
+  .card-body button {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
     align-items: flex-end;
     text-align: right;
-    text-decoration-line: underline;
+    text-decoration: none;
     color: #27ae60;
+    transition: 0.3s;
+  }
+
+  .card-body button:hover {
+    color: #828282;
+  }
+
+  .modal {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-content {
+    background: #171717;
+  }
+
+  .close {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  .close:hover {
+    color: #828282;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+  }
+
+  .modal-p {
+    font-size: 22px;
+  }
+
+  .modal-article {
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: auto;
+    text-align: justify;
+  }
+
+  .modal-footer-a {
+    display: flex;
+    justify-content: end;
+    padding: 15px 50px;
+    border-top: 1px solid white;
+  }
+
+  .btn-show {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #27ae60;
+    transition: 0.3s;
+  }
+  .btn-show:hover {
+    color: #828282;
+    transform: scale(1.1);
   }
 }
 
@@ -94,7 +161,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 60px;
-    margin-top: 50px;
+    margin-top: 100px;
     color: #ffffff;
   }
 
@@ -166,14 +233,80 @@
     color: #828282;
   }
 
-  .card-body a {
+  .card-body button {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 13px;
     align-items: flex-end;
     text-align: right;
-    text-decoration-line: underline;
+    text-decoration: none;
     color: #27ae60;
+  }
+
+  .card-body button:hover {
+    color: #828282;
+  }
+
+  .modal {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-content {
+    background: #171717;
+  }
+
+  .close {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  .close:hover {
+    color: #828282;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .modal-p {
+    font-size: 16px;
+  }
+
+  .modal-article {
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: auto;
+    text-align: justify;
+  }
+
+  .modal-footer-a {
+    display: flex;
+    justify-content: end;
+    padding: 15px 20px;
+    border-top: 1px solid white;
+  }
+
+  .btn-show {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: #27ae60;
+    transition: 0.3s;
+  }
+  .btn-show:hover {
+    color: #828282;
+    transform: scale(1.1);
   }
 }

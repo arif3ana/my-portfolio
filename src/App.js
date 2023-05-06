@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import PageReview from "./components/PageReview";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { reviewer } from "./utils/projectsData";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/navbar.css";
 import "./style/firstPage.css";
@@ -30,7 +31,19 @@ function App() {
         </article>
         <article id='Projects'>
           <Projects />
-          <PageReview />
+          {reviewer.map((review) => {
+            if (!review.name || !review.content) {
+              return null;
+            }
+            return (
+              <PageReview
+                name={review.name}
+                position={review.position}
+                content={review.content}
+                image={review.image}
+              />
+            );
+          })}
         </article>
         <article id='Contact'>
           <Contact />
