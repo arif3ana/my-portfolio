@@ -1,0 +1,94 @@
+.navbar {
+  padding-top: 15px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  /* Inside auto layout */
+  flex: none;
+  flex-grow: 1;
+}
+
+.profile {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  border: 1px solid white;
+}
+
+.navbar-brand {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 62px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+}
+
+/* navigasi */
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6vw;
+  opacity: 0.99;
+
+  /* Inside auto layout */
+  flex: none;
+}
+
+.navbar-nav a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.navbar-nav a:hover {
+  color: #95a5a6;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+  }
+  .title {
+    gap: 10px;
+  }
+  .navbar-brand {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .navbar-nav a {
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  .navbar-nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-nav a:hover {
+    color: #95a5a6;
+  }
+}
