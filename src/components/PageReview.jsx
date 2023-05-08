@@ -5,8 +5,18 @@ export default function PAgeReview({ ...props }) {
     <div className='review'>
       <h3 className='title'>"</h3>
       <div className='content'>
-        <img src={!props.image ? dumy : props.image} alt={props.position} />
-        <div className='article-review'>
+        <img
+          src={!props.image ? dumy : props.image}
+          alt={props.position}
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          loading='lazy'
+        />
+        <div
+          className='article-review'
+          data-aos='fade-up'
+          data-aos-anchor-placement='top-center'>
           <p>testimonial</p>
           <h3 className='title-page'>Client Review</h3>
           <p>{props.content}</p>

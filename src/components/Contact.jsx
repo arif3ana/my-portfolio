@@ -8,7 +8,7 @@ export default function Contact() {
         <a href='mailto:ariftriana28@gmail.com'>
           <i className='bi bi-envelope-at-fill'></i>
         </a>
-        <a href='www.whatsapp.com'>
+        <a href='https://wa.me/qr/INHMCMMKMAQDP1'>
           <i className='bi bi-whatsapp'></i>
         </a>
       </div>

@@ -5,17 +5,16 @@ export default function PagePlus() {
   return (
     <div className='i-do'>
       <h3 className='second-title'>What i do</h3>
-
       <div className='row'>
-        <div className='col'>
-          <img src={developer} alt='developer icon ' />
+        <div className='col' data-aos='fade-right'>
+          <img src={developer} alt='developer icon ' loading='lazy' />
           <p>
             Web <br />
             Developer
           </p>
         </div>
-        <div className='col'>
-          <img src={design} alt='web design icon ' />
+        <div className='col' data-aos='fade-left'>
+          <img src={design} alt='web design icon ' loading='lazy' />
           <p>
             Web <br />
             Design

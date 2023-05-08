@@ -5,6 +5,7 @@ const projectData = [
     pict: "",
     alternativeText: "",
     description: "",
+    url: "",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const projectData = [
     pict: "",
     alternativeText: "",
     description: "",
+    url: "",
   },
 ];
 

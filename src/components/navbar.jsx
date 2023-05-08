@@ -5,12 +5,11 @@ export default function Navbar() {
     <nav className='navbar navbar-expand-lg bg-body-transparant sticky-top mb-10'>
       <div className='container-fluid'>
         <div className='title'>
-          <img className='profile' src={profile} alt='Profile' />
-          <h1 className='navbar-brand text-white' href='#'>
+          <img className='profile' src={profile} alt='Profile' loading='lazy' />
+          <a className='navbar-brand text-white' href='#'>
             Arif
-          </h1>
+          </a>
         </div>
-
         <div className='navbar-nav ms-auto'>
           <a className='nav-link ' href='#about'>
             About

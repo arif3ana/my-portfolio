@@ -12,6 +12,7 @@ export default function Projects() {
               src={!data.pict ? web : data.pict}
               className='card-img-top'
               alt={data.alternativeText}
+              loading='lazy'
             />
             <div className='card-body'>
               <h5 className='card-title'>{data.title}</h5>
@@ -25,11 +26,11 @@ export default function Projects() {
             </div>
           </div>
         ))}
-
         {projectData.map((detail) => {
           if (!detail.description) {
             return (
               <div
+                key={detail.id}
                 className='modal fade'
                 id={`detailProject-${detail.id}`}
                 tabIndex='-1'
@@ -38,9 +39,9 @@ export default function Projects() {
                 <div className='modal-dialog'>
                   <div className='modal-content'>
                     <div className='modal-header'>
-                      <h1 className='modal-title fs-4' id='exampleModalLabel'>
+                      <h5 className='modal-title fs-4' id='exampleModalLabel'>
                         {detail.title}
-                      </h1>
+                      </h5>
                       <button
                         type='button'
                         className='close'
@@ -49,7 +50,6 @@ export default function Projects() {
                         <i className='bi bi-x-lg'></i>
                       </button>
                     </div>
-
                     <div className='modal-body'>
                       <p className='modal-p'>
                         The project is still the develoment process
@@ -58,7 +58,7 @@ export default function Projects() {
                     <div className='modal-footer'>
                       <button
                         type='button'
-                        class='btn btn-secondary'
+                        className='btn btn-secondary'
                         data-bs-dismiss='modal'>
                         Ok
                       </button>
@@ -70,6 +70,7 @@ export default function Projects() {
           }
           return (
             <div
+              key={detail.id}
               className='modal fade'
               id={`detailProject-${detail.id}`}
               tabIndex='-1'
@@ -89,17 +90,17 @@ export default function Projects() {
                       <i className='bi bi-x-lg'></i>
                     </button>
                   </div>
-
                   <div className='modal-body'>
                     <img
                       src={!detail.pict ? web : detail.pict}
                       className='card-img-top'
                       alt={detail.alternativeText}
+                      loading='lazy'
                     />
                     <p className='modal-article'>{detail.description}</p>
                   </div>
                   <div className='modal-footer-a'>
-                    <a type='button' className='btn-show'>
+                    <a href={detail.url} type='button' className='btn-show'>
                       Let's show project
                     </a>
                   </div>
