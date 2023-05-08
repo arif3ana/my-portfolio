@@ -1,0 +1,17 @@
+{
+  "short_name": "personal Portfolio Arif triana",
+  "name": "personal Portfolio Arif triana freelance Web developer",
+
+  "icons": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+
+  "start_url": "https://arif3ana.github.io/my-portfolio",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
