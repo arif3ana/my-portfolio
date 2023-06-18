@@ -52,7 +52,7 @@ export default function Projects() {
                     </div>
                     <div className='modal-body'>
                       <p className='modal-p'>
-                        The project is still the develoment process
+                        The project is still the development process
                       </p>
                     </div>
                     <div className='modal-footer'>
