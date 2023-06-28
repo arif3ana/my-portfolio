@@ -3,25 +3,37 @@ export default function About() {
   return (
     <div className='about' data-aos='fade-up' data-aos-duration='1200'>
       <h3 className='article-title'>About</h3>
-      <p className='about-article'>
-        Hello, i'm Arif Triana from Indonesia and i'm passionate about
-        developing websites. My interest in web development began when i was in
-        high school, where i started learning various things about it. My hope
-        in the future is to be able to create a website that can solve problems
-        and be useful for everyone.
-        <br />
-        To do this, i use programming languages such as html, css, and
-        javascript to build a website's structure, design, and functionality. My
-        job is to ensure that the website run smoothly, load quickly, looks
-        great on all devices. I also work with database, APIs, amd other
-        technologies to ensure that the website can interact with other systems
-        and services.
-        <br />
-        Ultimately, my goal is to create a website that provides visitor with
-        user-freandly and engaging experience. i'm always looking to learn new
-        things and explore new tools, like PHP and Laravel, to enhance my skills
-        and create even better websites.
-      </p>
+      <div className='about-article'>
+        <p>
+          Hello, I'm Arif Triana from Indonesia and I'm passionate about website
+          development. My interest in web development started when I was in high
+          school, where I started to learn different things about it. I had an
+          internship experience at DKIS (Dinas komunikasi, informatika dan
+          statistik) together with two of my friends when I was in high school
+          and I've attended a bootcamp event at Dicoding. Although I have
+          limited experience in the world of web development, I am constantly
+          striving to learn and improve my skills, so I would like to explore
+          further.
+        </p>
+        <p>
+          I use programming languages such as html, css, and javascript to
+          create the structure, design, and functionality of websites. My job is
+          to make sure that the websites I create run smoothly, load quickly,
+          and look good on all devices. I also work with databases, APIs, and
+          other technologies to make sure the website can interact with other
+          systems and services.
+        </p>
+        <p>
+          My future goals and expectations are to create websites that provide
+          visitors with a user-friendly, engaging, problem-solving, and useful
+          experience. I feel good when I can create a website that not only
+          works well, but also provides an enjoyable experience for its
+          visitors. I want to create a website that is not only aesthetically
+          pleasing, but also beneficial to society. I am always eager to learn
+          new things and explore new tools, such as PHP and Laravel, to improve
+          my skills and create better websites.
+        </p>
+      </div>
 
       <p className='title-skill'>My Skills</p>
       <ul className='skills'>

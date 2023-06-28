@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+
 @media only screen and (min-width: 600px) {
   .projects {
     display: flex;
@@ -14,21 +16,19 @@
     text-align: center;
     align-items: center;
     font-style: normal;
+    font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 38px;
     line-height: auto;
   }
 
   .card-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
   }
 
   .card {
-    position: relative;
-    left: 0px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -40,21 +40,12 @@
     border: 1px solid #000000;
     box-shadow: -15px -15px 50px rgba(0, 0, 0, 0.66);
     border-radius: 10px;
-    width: 368px;
-    height: auto;
     transition: 0.5s;
   }
 
-  .card:not(:first-child) {
-    margin-left: -150px;
-  }
-
   .card:hover {
-    transform: translateX(-100px);
-  }
-
-  .card:hover ~ .card {
-    left: 30px;
+    transform: scale(1.1);
+    z-index: 99;
   }
 
   .card img {
@@ -70,6 +61,7 @@
 
   .card-title {
     font-style: normal;
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 49px;
@@ -78,6 +70,7 @@
 
   .card-body button {
     font-style: normal;
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
@@ -110,6 +103,10 @@
   }
   .close:hover {
     color: #828282;
+  }
+
+  .modal-title {
+    font-family: "DM Sans", sans-serif;
   }
 
   .modal-body {
@@ -167,6 +164,7 @@
 
   .article-project-title {
     font-style: normal;
+    font-family: "DM Sans", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
@@ -180,16 +178,15 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
+    margin-top: 50px;
   }
 
   .card {
-    position: relative;
-    top: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     gap: 10px;
     background: #212121;
     opacity: 0.99;
@@ -206,11 +203,7 @@
   }
 
   .card:hover {
-    transform: translateY(-20%);
-  }
-
-  .card:hover ~ .card {
-    top: 50px;
+    transform: translateY(-34%);
   }
 
   .card img {
@@ -226,6 +219,7 @@
 
   .card-title {
     font-style: normal;
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
@@ -235,6 +229,7 @@
 
   .card-body button {
     font-style: normal;
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 13px;
@@ -266,6 +261,10 @@
   }
   .close:hover {
     color: #828282;
+  }
+
+  .modal-title {
+    font-family: "DM Sans", sans-serif;
   }
 
   .modal-body {

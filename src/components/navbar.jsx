@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../img/profile.webp";
 export default function Navbar() {
   return (
-    <nav className='navbar navbar-expand-lg bg-body-transparant sticky-top mb-10'>
+    <nav className='navbar navbar-expand-lg bg-body-transparant '>
       <div className='container-fluid'>
         <div className='title'>
           <img className='profile' src={profile} alt='Profile' loading='lazy' />

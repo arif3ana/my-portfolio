@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 .navbar {
-  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1% 5% 1% 5%;
+  z-index: 999;
+  background-color: #171717;
 }
 .title {
   display: flex;
@@ -22,7 +29,7 @@
 }
 
 .navbar-brand {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 62px;
@@ -50,7 +57,7 @@
 }
 
 .navbar-nav a {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

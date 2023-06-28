@@ -24,21 +24,24 @@ export default function FirstPage() {
       </p>
       <div className='icons'>
         <a
-          href='https://instagram.com/arf.3ana'
+          href='https://www.instagram.com/arif.3ana/'
           data-aos='fade-left'
-          data-aos-duration='1000'>
+          data-aos-duration='1000'
+          target='_blank'>
           <i className='bi bi-instagram'></i>
         </a>
         <a
           href='https://linkedin.com/in/arif-triana-48bb74254'
           data-aos='fade-left'
-          data-aos-duration='2000'>
+          data-aos-duration='2000'
+          target='_blank'>
           <i className='bi bi-linkedin'></i>
         </a>
         <a
           href='https://github.com/arif3ana'
           data-aos='fade-left'
-          data-aos-duration='3000'>
+          data-aos-duration='3000'
+          target='_blank'>
           <i className='bi bi-github'></i>
         </a>
       </div>

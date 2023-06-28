@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
 @media only screen and (min-width: 600px) {
   .review {
     display: flex;
@@ -8,7 +9,7 @@
   }
 
   .review .title {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -37,7 +38,7 @@
   }
 
   .title-page {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
@@ -63,7 +64,7 @@
   }
 
   .client-name {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -91,7 +92,7 @@
   }
 
   .review .title {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -120,7 +121,7 @@
   }
 
   .title-page {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -145,7 +146,7 @@
   }
 
   .client-name {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
