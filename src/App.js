@@ -20,7 +20,9 @@ import "./style/footer.css";
 function App() {
   return (
     <>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <section>
         <FirstPage />
       </section>
