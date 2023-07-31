@@ -9,7 +9,7 @@
     padding: 0 20px;
     gap: 100px;
     margin-top: 150px;
-    color: #ffffff;
+    color: #e3e3e3;
   }
 
   .article-project-title {
@@ -95,7 +95,7 @@
 
   .close {
     background-color: transparent;
-    color: white;
+    color: #e3e3e3;
     border: none;
     font-size: 28px;
     border-radius: 50%;
@@ -159,7 +159,7 @@
     align-items: flex-end;
     gap: 60px;
     margin-top: 100px;
-    color: #ffffff;
+    color: #e3e3e3;
   }
 
   .article-project-title {
@@ -253,7 +253,7 @@
 
   .close {
     background-color: transparent;
-    color: white;
+    color: #e3e3e3;
     border: none;
     font-size: 20px;
     border-radius: 50%;
@@ -293,7 +293,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 15px 20px;
-    border-top: 1px solid white;
+    border-top: 1px solid #e3e3e3;
   }
 
   .btn-show {

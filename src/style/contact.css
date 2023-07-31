@@ -6,7 +6,7 @@
     text-align: center;
     flex-direction: column;
     margin-top: 150px;
-    color: #ffffff;
+    color: #e3e3e3;
     gap: 100px;
     padding-top: 138px;
     padding-bottom: 100px;
@@ -20,64 +20,48 @@
     line-height: auto;
   }
 
-  .contact-button {
-    width: 280px;
-    height: 80px;
-    background: #dfe6e9;
-    border-radius: 40px;
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .article-contact,
+  .main-contact {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .main-contact {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: 0.3s linear;
   }
 
-  .contact-button:hover {
-    transform: scale(1.1);
+  .main-contact a {
+    text-decoration: none;
+    color: #e3e3e3;
   }
 
-  .contact-button span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #27ae60;
-    color: #f1f1f1;
-    text-align: center;
-    line-height: 80px;
-    z-index: 999;
-    transition: 0.6s linear;
-    border-radius: 40px;
-    font-size: 19px;
+  .contact-tools {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: end;
+    border: 1px solid whitesmoke;
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease;
   }
 
-  .contact-button:hover span {
-    transform: translateX(-100%);
-    transition-delay: 0.3s;
+  .contact-tools i {
+    font-size: 55px;
+    color: #828282;
   }
 
-  .contact-button a {
-    flex: 1;
-    font-size: 26px;
-    color: #212121;
-    text-align: center;
-    transform: translateX(-100px);
-    opacity: 0;
-    transition: 0.3s linear;
-  }
-
-  .contact-button:hover a {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .contact-button a:nth-of-type(1) {
-    transition-delay: 1s;
-  }
-
-  .contact-button a:nth-of-type(2) {
-    transition-delay: 0.8s;
+  .contact-tools:hover {
+    transform: translate(11px, -11px);
   }
 }
 
@@ -88,7 +72,7 @@
     text-align: center;
     flex-direction: column;
     margin-top: 100px;
-    color: #ffffff;
+    color: #e3e3e3;
     gap: 40px;
     padding-bottom: 100px;
   }
@@ -101,66 +85,47 @@
     line-height: auto;
   }
 
-  .contact-button {
-    width: 170px;
-    height: 50px;
-    background: #dfe6e9;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: 0.3s linear;
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
 
-  .contact-button:hover {
-    transform: scale(1.1);
-  }
-
-  .contact-button span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #27ae60;
-    color: #f1f1f1;
-    text-align: center;
-    line-height: 80px;
-    z-index: 999;
-    transition: 0.6s linear;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .article-contact,
+  .main-contact {
+    text-align: left;
     font-size: 13px;
   }
 
-  .contact-button:hover span {
-    transform: translateX(-100%);
-    transition-delay: 0.3s;
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
   }
 
-  .contact-button a {
-    flex: 1;
-    font-size: 20px;
-    color: #212121;
-    text-align: center;
-    transform: translateX(-100px);
-    opacity: 0;
-    transition: 0.3s linear;
+  .main-contact a {
+    text-decoration: none;
+    color: #e3e3e3;
   }
 
-  .contact-button:hover a {
-    opacity: 1;
-    transform: translateX(0);
+  .contact-tools {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: end;
+    border: 1px solid whitesmoke;
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px;
+    transition: 0.5s ease;
   }
 
-  .contact-button a:nth-of-type(1) {
-    transition-delay: 1s;
+  .contact-tools i {
+    font-size: 44px;
+    color: #828282;
   }
 
-  .contact-button a:nth-of-type(2) {
-    transition-delay: 0.8s;
+  .contact-tools:hover {
+    transform: translate(9px, -9px);
   }
 }

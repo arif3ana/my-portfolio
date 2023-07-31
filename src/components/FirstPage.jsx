@@ -28,21 +28,21 @@ export default function FirstPage() {
           data-aos='fade-left'
           data-aos-duration='1000'
           target='_blank'>
-          <i className='bi bi-instagram'></i>
+          <i className='bi bi-instagram' />
         </a>
         <a
           href='https://linkedin.com/in/arif-triana-48bb74254'
           data-aos='fade-left'
           data-aos-duration='2000'
           target='_blank'>
-          <i className='bi bi-linkedin'></i>
+          <i className='bi bi-linkedin' />
         </a>
         <a
           href='https://github.com/arif3ana'
           data-aos='fade-left'
           data-aos-duration='3000'
           target='_blank'>
-          <i className='bi bi-github'></i>
+          <i className='bi bi-github' />
         </a>
       </div>
     </div>

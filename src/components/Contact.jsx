@@ -3,14 +3,45 @@ export default function Contact() {
   return (
     <div className='contact'>
       <h3>Contact Me</h3>
-      <div className='contact-button'>
-        <span>Start a conversation</span>
-        <a href='mailto:arif.3ana@gmail.com'>
-          <i className='bi bi-envelope-at-fill'></i>
-        </a>
-        <a href='https://wa.me/message/NIZBDOTB7RHP1'>
-          <i className='bi bi-whatsapp'></i>
-        </a>
+      <div className='contact-content'>
+        <div className='article-contact'>
+          <h5 className='title-page'>Lets talk</h5>
+          <p>
+            If you are interested in working with us, or if you have any
+            questions about the project you would like to work on, please don't
+            hesitate to to contact me. I'd love to learn more about about your
+            project and provide a solution that fits your needs.
+          </p>
+          <p>
+            Thank you for visiting my portfolio, I look forward to working with
+            you in creating amazing web solutions! Feel free to contact me, I'm
+            here to help.
+          </p>
+        </div>
+        <div className='main-contact'>
+          <a href='mailto:arif.3ana@gmail.com' target='_blank'>
+            <div className='contact-tools'>
+              <i className='bi bi-envelope-at-fill' />
+              <div>
+                <p>
+                  Email <br /> arif.3ana@gmail.com
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href='https://api.whatsapp.com/send?phone=6285703020296'
+            target='_blank'>
+            <div className='contact-tools'>
+              <i className='bi bi-whatsapp' />
+              <div>
+                <p>
+                  Whatsapp <br /> arif.3ana@gmail.com
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
