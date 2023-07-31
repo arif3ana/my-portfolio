@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.1c4d3cc8.css",
-    "main.js": "/my-portfolio/static/js/main.68c4434c.js",
+    "main.css": "/my-portfolio/static/css/main.c66c7d48.css",
+    "main.js": "/my-portfolio/static/js/main.a2e89a68.js",
     "static/js/787.fb771931.chunk.js": "/my-portfolio/static/js/787.fb771931.chunk.js",
     "static/media/wearhouse-project.WebP": "/my-portfolio/static/media/wearhouse-project.cfebd66b660169f4df21.WebP",
     "static/media/dumy.jpg": "/my-portfolio/static/media/dumy.481f496ae32ca7425d2b.jpg",
@@ -9,12 +9,12 @@
     "static/media/web.webp": "/my-portfolio/static/media/web.f703bf4f74da993a9029.webp",
     "static/media/profile.webp": "/my-portfolio/static/media/profile.171ef41631944aaf0059.webp",
     "index.html": "/my-portfolio/index.html",
-    "main.1c4d3cc8.css.map": "/my-portfolio/static/css/main.1c4d3cc8.css.map",
-    "main.68c4434c.js.map": "/my-portfolio/static/js/main.68c4434c.js.map",
+    "main.c66c7d48.css.map": "/my-portfolio/static/css/main.c66c7d48.css.map",
+    "main.a2e89a68.js.map": "/my-portfolio/static/js/main.a2e89a68.js.map",
     "787.fb771931.chunk.js.map": "/my-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c4d3cc8.css",
-    "static/js/main.68c4434c.js"
+    "static/css/main.c66c7d48.css",
+    "static/js/main.a2e89a68.js"
   ]
 }
