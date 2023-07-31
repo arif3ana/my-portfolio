@@ -36,7 +36,7 @@ export default function Contact() {
               <i className='bi bi-whatsapp' />
               <div>
                 <p>
-                  Whatsapp <br /> arif.3ana@gmail.com
+                  Whatsapp <br /> arif.triana 085703020296
                 </p>
               </div>
             </div>
