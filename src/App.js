@@ -7,6 +7,8 @@ import PageReview from "./components/PageReview";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { reviewer } from "./utils/projectsData";
+import ReactGA from "react-ga";
+import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/navbar.css";
 import "./style/firstPage.css";
@@ -18,13 +20,42 @@ import "./style/contact.css";
 import "./style/footer.css";
 
 function App() {
+  // integration google analytic
+  const trackingId = "404007558";
+  ReactGA.initialize(trackingId);
+  useEffect(() => ReactGA.pageview("/my-portfolio"));
+
+  const handleIconClick = () => {
+    ReactGA.event({
+      category: "Social media",
+      action: "Social media Link Clicked",
+      label: "icons Sosial media",
+    });
+  };
+
+  const handleEmailClick = () => {
+    ReactGA.event({
+      category: "Email contact",
+      action: "Email contact Link Clicked",
+      label: "Email Clicked",
+    });
+  };
+
+  const handleWaClick = () => {
+    ReactGA.event({
+      category: "Whatsaap contact",
+      action: "Whatsaap contact Link Clicked",
+      label: "Whatsaap Clicked",
+    });
+  };
+
   return (
     <>
       <header>
         <Navbar />
       </header>
       <section>
-        <FirstPage />
+        <FirstPage iconsClick={handleIconClick} />
       </section>
       <main>
         <article id='about'>
@@ -48,7 +79,7 @@ function App() {
           })}
         </article>
         <article id='Contact'>
-          <Contact />
+          <Contact emailClick={handleEmailClick} waClick={handleWaClick} />
         </article>
       </main>
       <Footer />

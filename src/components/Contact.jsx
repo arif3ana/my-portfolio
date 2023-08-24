@@ -1,5 +1,5 @@
 import React from "react";
-export default function Contact() {
+export default function Contact({ emailClick, waClick }) {
   return (
     <div className='contact'>
       <h3>Contact Me</h3>
@@ -19,7 +19,10 @@ export default function Contact() {
           </p>
         </div>
         <div className='main-contact'>
-          <a href='mailto:arif.3ana@gmail.com' target='_blank'>
+          <a
+            href='mailto:arif.3ana@gmail.com'
+            target='_blank'
+            onClick={emailClick}>
             <div className='contact-tools'>
               <i className='bi bi-envelope-at-fill' />
               <div>
@@ -31,7 +34,8 @@ export default function Contact() {
           </a>
           <a
             href='https://api.whatsapp.com/send?phone=6285703020296'
-            target='_blank'>
+            target='_blank'
+            onClick={waClick}>
             <div className='contact-tools'>
               <i className='bi bi-whatsapp' />
               <div>

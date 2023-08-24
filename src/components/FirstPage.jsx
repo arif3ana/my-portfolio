@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "../img/profile.webp";
-export default function FirstPage() {
+export default function FirstPage({ iconsClick }) {
   return (
     <div className='firstPage'>
       <img
@@ -24,6 +24,7 @@ export default function FirstPage() {
       </p>
       <div className='icons'>
         <a
+          onClick={iconsClick}
           href='https://www.instagram.com/arif.3ana/'
           data-aos='fade-left'
           data-aos-duration='1000'
@@ -31,6 +32,7 @@ export default function FirstPage() {
           <i className='bi bi-instagram' />
         </a>
         <a
+          onClick={iconsClick}
           href='https://linkedin.com/in/arif-triana-48bb74254'
           data-aos='fade-left'
           data-aos-duration='2000'
@@ -38,6 +40,7 @@ export default function FirstPage() {
           <i className='bi bi-linkedin' />
         </a>
         <a
+          onClick={iconsClick}
           href='https://github.com/arif3ana'
           data-aos='fade-left'
           data-aos-duration='3000'
