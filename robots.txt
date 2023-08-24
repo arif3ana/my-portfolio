@@ -1,5 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
 Allow: /
-Sitemap:
+Sitemap: https://arif3ana.github.io/my-portfolio/
