@@ -1,6 +1,7 @@
 import React from "react";
 import web from "../img/web.webp";
 import mydiary from "../img/mydiary-project.WebP";
+import todoList from "../img/simple-todoList.webp";
 import Modal from "./Modal";
 import { projectData } from "../utils/projectsData";
 export default function Projects() {
@@ -14,6 +15,13 @@ export default function Projects() {
               {index === 1 ? (
                 <img
                   src={mydiary}
+                  className='card-img-top img-box'
+                  alt={data.alternativeText}
+                  loading='lazy'
+                />
+              ) : index === 2 ? (
+                <img
+                  src={todoList}
                   className='card-img-top img-box'
                   alt={data.alternativeText}
                   loading='lazy'

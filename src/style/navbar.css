@@ -22,7 +22,7 @@
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #e3e3e3;
   /* Inside auto layout */
   flex: none;
   border: 1px solid white;
@@ -65,7 +65,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #e3e3e3;
   transition: 0.3s;
 }
 

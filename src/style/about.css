@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #ffffff;
+    color: #e3e3e3;
     margin-top: 50px;
   }
 
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #ffffff;
+    color: #e3e3e3;
     margin-top: 50px;
   }
 
@@ -87,8 +87,7 @@
     text-align: justify;
     font-style: normal;
     font-weight: 400;
-    /* font-family: "Times New Roman", Times, serif; */
-    font-size: 12px;
+    font-size: 13px;
     line-height: auto;
   }
 
@@ -96,7 +95,7 @@
     align-items: center;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     line-height: auto;
     text-align: center;
     margin-bottom: 20px;

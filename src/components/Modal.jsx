@@ -1,6 +1,7 @@
 import web from "../img/web.webp";
 import mydiary from "../img/mydiary-project.WebP";
 import wearhouses from "../img/wearhouse-project.WebP";
+import todoList from "../img/simple-todoList.webp";
 
 export default function Modal({ data, index }) {
   //membuat tag paragraf
@@ -83,6 +84,13 @@ export default function Modal({ data, index }) {
               ) : index === 1 ? (
                 <img
                   src={mydiary}
+                  className='card-img-top img-box'
+                  alt={data.alternativeText}
+                  loading='lazy'
+                />
+              ) : index === 2 ? (
+                <img
+                  src={todoList}
                   className='card-img-top img-box'
                   alt={data.alternativeText}
                   loading='lazy'
