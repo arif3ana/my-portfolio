@@ -21,7 +21,7 @@ import "./style/footer.css";
 
 function App() {
   // integration google analytic
-  const trackingId = "404007558";
+  const trackingId = "G-5QB4CC83T1";
   ReactGA.initialize(trackingId);
   useEffect(() => ReactGA.pageview("/my-portfolio"));
 
