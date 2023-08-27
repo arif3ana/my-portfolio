@@ -6,9 +6,8 @@ import Projects from "./components/Projects";
 import PageReview from "./components/PageReview";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { reviewer } from "./utils/projectsData";
 import ReactGA from "react-ga";
-import { useEffect } from "react";
+import { reviewer } from "./utils/projectsData";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/navbar.css";
 import "./style/firstPage.css";
@@ -21,10 +20,8 @@ import "./style/footer.css";
 
 function App() {
   // integration google analytic
-  const trackingId = "G-5QB4CC83T1";
-  ReactGA.initialize(trackingId);
-  useEffect(() => ReactGA.pageview("/my-portfolio"));
-
+  ReactGA.initialize("G-5QB4CC83T1");
+  // useEffect(() => ReactGA.pageview("/my-portfolio"));
   const handleIconClick = () => {
     ReactGA.event({
       category: "Social media",
