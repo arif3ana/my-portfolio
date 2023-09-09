@@ -1,33 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 995px) {
   .about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #e3e3e3;
     margin-top: 50px;
   }
 
   .article-title {
-    font-style: normal;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: auto;
+    font-weight: bold;
+    font-size: 3.8vw;
     align-items: center;
     text-align: center;
   }
 
-  .about-article {
+  .about-content .about-article {
+    margin-top: 5%;
     align-items: center;
     text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    /* font-family: "Times New Roman", Times, serif; */
-    font-size: 20px;
-    line-height: auto;
-    width: 80%;
+    font-size: 1.7vw;
+    margin-bottom: 5%;
+  }
+
+  .about-content img {
+    display: none;
+  }
+
+  .about-article .show {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .about-article .show:hover {
+    text-decoration: underline;
+  }
+
+  .section-button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .btn-hire {
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    font-weight: 550;
+    font-size: 1.8vw;
+    letter-spacing: 2%;
+    border: none;
+    background: linear-gradient(to right, #4ea0d7, #472ac0);
+    transition: 0.5s;
+  }
+
+  .btn-hire:hover {
+    background: linear-gradient(to left, #4ea0d7, #472ac0);
+  }
+
+  .btn-resume {
+    padding: 10px 40px 10px 40px;
+    font-weight: 550;
+    font-size: 1.8vw;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #4fb7da;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+
+  .btn-resume:hover {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    border-left: transparent;
+    background: linear-gradient(to left, #4ea0d7, #472ac0);
   }
 
   .title-skill {
@@ -63,7 +109,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 995px) {
   .about {
     display: flex;
     justify-content: center;
@@ -78,17 +124,72 @@
     font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 5vw;
     line-height: auto;
   }
 
-  .about-article {
+  .about-content {
+    margin-top: 5%;
+  }
+
+  .about-content img {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3%;
+  }
+
+  .about-content .about-article {
     align-items: center;
     text-align: justify;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
+    font-size: 3.7vw;
     line-height: auto;
+    margin-bottom: 5%;
+  }
+
+  .section-button {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .btn-hire {
+    padding: 10px 7% 10px 7%;
+    border-radius: 10px;
+    font-weight: 550;
+    font-size: 3.8vw;
+    letter-spacing: 2%;
+    border: none;
+    background: linear-gradient(to right, #4ea0d7, #472ac0);
+    transition: 0.5s;
+  }
+
+  .btn-hire:hover {
+    background: linear-gradient(to left, #4ea0d7, #472ac0);
+  }
+
+  .btn-resume {
+    padding: 10px 7% 10px 7%;
+    font-weight: 550;
+    font-size: 3.8vw;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #4fb7da;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+
+  .btn-resume:hover {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    border-left: transparent;
+    background: linear-gradient(to left, #4ea0d7, #472ac0);
   }
 
   .title-skill {

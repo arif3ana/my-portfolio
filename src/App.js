@@ -1,5 +1,5 @@
 import Navbar from "./components/navbar";
-import FirstPage from "./components/FirstPage";
+import HomePage from "./components/HomePage";
 import About from "./components/About";
 import PagePlus from "./components/PagePlus";
 import Projects from "./components/Projects";
@@ -10,7 +10,7 @@ import ReactGA from "react-ga4";
 import { reviewer } from "./utils/projectsData";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style/navbar.css";
-import "./style/firstPage.css";
+import "./style/homePage.css";
 import "./style/about.css";
 import "./style/pagePlus.css";
 import "./style/projects.css";
@@ -51,7 +51,7 @@ function App() {
         <Navbar />
       </header>
       <section>
-        <FirstPage iconsClick={handleIconClick} />
+        <HomePage iconsClick={handleIconClick} />
       </section>
       <main>
         <article id='about'>
