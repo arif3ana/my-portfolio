@@ -7,7 +7,7 @@ import { projectData } from "../utils/projectsData";
 export default function Projects() {
   return (
     <div className='projects'>
-      <h3 className='article-project-title'>My Projects</h3>
+      <h3 className='article-project-title'>PORTFOLIO</h3>
       <div className='card-projects'>
         {projectData.map((data, index) => (
           <>

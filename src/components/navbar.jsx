@@ -31,47 +31,27 @@ export default function Navbar() {
           <div className='offcanvas-body'>
             <ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
               <li className='nav-item'>
-                <a
-                  className='nav-link'
-                  data-bs-dismiss='offcanvas'
-                  aria-label='Close'
-                  href='#'>
+                <a className='nav-link' href='#'>
                   HOME
                 </a>
               </li>
               <li className='nav-item'>
-                <a
-                  className='nav-link'
-                  // data-bs-dismiss='offcanvas'
-                  // aria-label='Close'
-                  href='#about'>
+                <a className='nav-link' href='#about'>
                   ABOUT ME
                 </a>
               </li>
               <li className='nav-item'>
-                <a
-                  className='nav-link'
-                  data-bs-dismiss='offcanvas'
-                  aria-label='Close'
-                  href='#'>
+                <a className='nav-link' href='#'>
                   PORTFOLIO
                 </a>
               </li>
               <li className='nav-item'>
-                <a
-                  className='nav-link'
-                  data-bs-dismiss='offcanvas'
-                  aria-label='Close'
-                  href='#'>
+                <a className='nav-link' href='#'>
                   SERVICE
                 </a>
               </li>
               <li className='nav-item'>
-                <a
-                  className='nav-link'
-                  data-bs-dismiss='offcanvas'
-                  aria-label='Close'
-                  href='#'>
+                <a className='nav-link' href='#'>
                   CONTACT
                 </a>
               </li>

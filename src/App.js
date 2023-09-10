@@ -56,7 +56,7 @@ function App() {
       <main>
         <article id='about'>
           <About />
-          <PagePlus />
+          {/* <PagePlus /> */}
         </article>
         <article id='Projects'>
           <Projects />
