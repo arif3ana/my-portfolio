@@ -1,9 +1,9 @@
 import Navbar from "./components/navbar";
 import HomePage from "./components/HomePage";
 import About from "./components/About";
-import PagePlus from "./components/PagePlus";
+import Service from "./components/Service";
 import Projects from "./components/Projects";
-import PageReview from "./components/PageReview";
+import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ReactGA from "react-ga4";
@@ -12,9 +12,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style/navbar.css";
 import "./style/homePage.css";
 import "./style/about.css";
-import "./style/pagePlus.css";
+import "./style/service.css";
 import "./style/projects.css";
-import "./style/pageReview.css";
+import "./style/review.css";
 import "./style/contact.css";
 import "./style/footer.css";
 
@@ -56,16 +56,18 @@ function App() {
       <main>
         <article id='about'>
           <About />
-          {/* <PagePlus /> */}
         </article>
-        <article id='Projects'>
+        <article id='projects'>
           <Projects />
+        </article>
+        <article id='service'>
+          <Service />
           {reviewer.map((review) => {
             if (!review.name || !review.content) {
               return null;
             }
             return (
-              <PageReview
+              <Review
                 name={review.name}
                 position={review.position}
                 content={review.content}
@@ -74,7 +76,7 @@ function App() {
             );
           })}
         </article>
-        <article id='Contact'>
+        <article id='contact'>
           <Contact emailClick={handleEmailClick} waClick={handleWaClick} />
         </article>
       </main>

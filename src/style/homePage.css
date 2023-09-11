@@ -15,7 +15,6 @@
   }
 
   .image .main-profile {
-    opacity: 0.9;
     border: 1px solid whitesmoke;
     width: 30vw;
     height: 30vw;
@@ -82,14 +81,14 @@
   }
 
   .image {
-    display: none;
+    display: block;
     place-items: center;
     padding: 0 0 20px 0;
   }
 
   .image .main-profile {
-    width: 150px;
-    height: 150px;
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;
     border: 1px solid whitesmoke;
     background: #d9d9d9;
@@ -111,10 +110,10 @@
   }
 
   .main-text .hi {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .main-text .intro {
-    font-size: 12vw;
+    font-size: 10.8vw;
   }
   .main-text .intro .name {
     color: #4fb7da;
@@ -129,7 +128,7 @@
 
   .article {
     text-align: center;
-    font-size: 3.8vw;
+    font-size: 3.7vw;
   }
 
   .icons {

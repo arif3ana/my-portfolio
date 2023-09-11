@@ -1,5 +1,5 @@
 import web from "../img/web.webp";
-import mydiary from "../img/mydiary-project.WebP";
+import mydiary from "../img/mydiary-project.jpg";
 import wearhouses from "../img/wearhouse-project.WebP";
 import todoList from "../img/simple-todoList.webp";
 
@@ -22,7 +22,7 @@ export default function Modal({ data, index }) {
           <div className='modal-dialog'>
             <div className='modal-content'>
               <div className='modal-header'>
-                <h5 className='modal-title fs-4' id='exampleModalLabel'>
+                <h5 className='modal-title ' id='exampleModalLabel'>
                   {data.title}
                 </h5>
                 <button
@@ -74,35 +74,12 @@ export default function Modal({ data, index }) {
               </button>
             </div>
             <div className='modal-body'>
-              {index === 0 ? (
-                <img
-                  src={wearhouses}
-                  className='card-img-top img-box'
-                  alt={data.alternativeText}
-                  loading='lazy'
-                />
-              ) : index === 1 ? (
-                <img
-                  src={mydiary}
-                  className='card-img-top img-box'
-                  alt={data.alternativeText}
-                  loading='lazy'
-                />
-              ) : index === 2 ? (
-                <img
-                  src={todoList}
-                  className='card-img-top img-box'
-                  alt={data.alternativeText}
-                  loading='lazy'
-                />
-              ) : (
-                <img
-                  src={web}
-                  className='card-img-top img-box'
-                  alt={data.alternativeText}
-                  loading='lazy'
-                />
-              )}
+              <img
+                src={data.image}
+                className='card-img-top img-box'
+                alt={`Copyright © ${new Date().getFullYear()} created by Arif Triana`}
+                loading='lazy'
+              />
               <div className='modal-article'>{paragraphElements}</div>
             </div>
             <div className='modal-footer-a'>

@@ -17,7 +17,7 @@ export default function About() {
       focus on both frontend and backend website development. I am committed to
       continuous learning and innovation in this field.{" "}
       <a href='#' className='show'>
-        Show More
+        ...Read More
       </a>
     </p>
   );
@@ -81,7 +81,7 @@ export default function About() {
 
       <div className='section-button'>
         <Button type={"submit"} className={"btn-hire"} content={"HIRE ME"} />
-        <a href='' download className='btn-resume'>
+        <a href='file' download className='btn-resume'>
           RESUME
         </a>
       </div>

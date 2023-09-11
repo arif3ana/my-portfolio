@@ -41,17 +41,17 @@ export default function Navbar() {
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
+                <a className='nav-link' href='#projects'>
                   PORTFOLIO
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
-                  SERVICE
+                <a className='nav-link' href='#service'>
+                  SERVICES
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
+                <a className='nav-link' href='#contact'>
                   CONTACT
                 </a>
               </li>
