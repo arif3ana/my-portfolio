@@ -111,7 +111,7 @@
   }
 
   hr {
-    border: 5px solid #212121;
+    border: 0.8vw solid #212121;
     border-radius: 5px;
     box-shadow: -5px -5px 10px #4ea0d7, -5px -5px 20px #472ac0;
     width: 100%;
@@ -122,5 +122,9 @@
     font-weight: bold;
     font-size: 4.5vw;
     color: #4ea0d7;
+  }
+
+  .client-position {
+    font-size: 3.7vw;
   }
 }

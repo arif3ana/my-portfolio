@@ -10,12 +10,12 @@ export default function Navbar() {
           data-bs-toggle='offcanvas'
           data-bs-target='#offcanvasRight'
           aria-controls='offcanvasRight'>
-          <i class='bi bi-list'></i>
+          <i className='bi bi-list'></i>
         </button>
 
         <div
           className='offcanvas offcanvas-end'
-          tabindex='-1'
+          tabIndex='-1'
           id='offcanvasRight'
           aria-labelledby='offcanvasRightLabel'>
           <div className='offcanvas-header'>
@@ -24,34 +24,35 @@ export default function Navbar() {
             </h5>
             <button
               type='button'
-              className='btn-close'
+              className='btn-close btn-close-white'
               data-bs-dismiss='offcanvas'
-              aria-label='Close'></button>
+              aria-label='Close'
+            />
           </div>
           <div className='offcanvas-body'>
             <ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
+                <a className='nav-link navigate' href='#'>
                   HOME
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#about'>
+                <a className='nav-link navigate' href='#about'>
                   ABOUT ME
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#projects'>
+                <a className='nav-link navigate' href='#projects'>
                   PORTFOLIO
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#service'>
+                <a className='nav-link navigate' href='#service'>
                   SERVICES
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#contact'>
+                <a className='nav-link navigate' href='#contact'>
                   CONTACT
                 </a>
               </li>

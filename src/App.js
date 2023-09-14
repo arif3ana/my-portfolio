@@ -68,6 +68,7 @@ function App() {
             }
             return (
               <Review
+                key={review.id}
                 name={review.name}
                 position={review.position}
                 content={review.content}
@@ -80,7 +81,9 @@ function App() {
           <Contact emailClick={handleEmailClick} waClick={handleWaClick} />
         </article>
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

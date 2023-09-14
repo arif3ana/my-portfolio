@@ -1,8 +1,4 @@
-import web from "../img/web.webp";
-import mydiary from "../img/mydiary-project.jpg";
-import wearhouses from "../img/wearhouse-project.WebP";
-import todoList from "../img/simple-todoList.webp";
-
+import React from "react";
 export default function Modal({ data, index }) {
   //membuat tag paragraf
   const paragraph = data.description.split("\n\n");
@@ -13,7 +9,7 @@ export default function Modal({ data, index }) {
     if (!data.description) {
       return (
         <div
-          key={data.id}
+          key={data.id - index}
           className='modal fade'
           id={`detailProject-${data.id}`}
           tabIndex='-1'

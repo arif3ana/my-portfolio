@@ -1,11 +1,12 @@
 import React from "react";
+import Button from "./Button";
 export default function Contact({ emailClick, waClick }) {
   return (
-    <div className='contact'>
+    <div className='contact container'>
       <h3>CONTACT</h3>
       <div className='contact-content'>
         <div className='article-contact'>
-          <h5 className='title-contact'>Lets talk</h5>
+          <p className='title-contact'>Lets talk</p>
           <p>
             If you are interested in working with us, or if you have any
             questions about the project you would like to work on, please don't
@@ -14,9 +15,6 @@ export default function Contact({ emailClick, waClick }) {
           <p>
             I'd love to learn more about about your project and provide a
             solution that fits your needs.
-            {/* Thank you for visiting my portfolio, I look forward to working with
-            you in creating amazing web solutions! Feel free to contact me, I'm
-            here to help. */}
           </p>
           <div className='icon-contact'>
             <div className='contact-tools'>
@@ -44,33 +42,37 @@ export default function Contact({ emailClick, waClick }) {
           </div>
         </div>
         <div className='main-contact'>
-          <form action=''>
-            <div class='form-floating mb-3'>
+          <form className='form-message'>
+            <div className='mb-2'>
               <input
-                type='name'
-                class='form-control'
-                id='floatingInput'
-                placeholder='name@example.com'
+                type='text'
+                className='form-input'
+                id='name'
+                placeholder='Name'
               />
-              <label for='name'>Name</label>
             </div>
-            <div class='form-floating mb-3'>
+            <div className='mb-2'>
               <input
                 type='email'
-                class='form-control'
-                id='floatingInput'
-                placeholder='name@example.com'
-                value='test@example.com'
+                className='form-input'
+                id='email'
+                placeholder='Email'
               />
-              <label for='email'>Email</label>
             </div>
-            <div class='form-floating'>
+            <div>
               <textarea
-                class='form-control'
+                type='text'
+                className='form-input area'
                 placeholder='Leave a message here'
                 id='message'
                 rows='3'></textarea>
-              <label for='message'>Your message</label>
+            </div>
+            <div className='form-botton'>
+              <Button
+                type={"submit"}
+                className={"btn-send"}
+                content={<i className='bi bi-send-fill' />}
+              />
             </div>
           </form>
         </div>

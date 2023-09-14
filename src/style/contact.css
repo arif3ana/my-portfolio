@@ -16,10 +16,19 @@
     letter-spacing: 0.2vw;
   }
 
+  .title-contact {
+    font-weight: bold;
+    font-size: 3.8vw;
+    letter-spacing: 0.2vw;
+    color: #4ea0d7;
+  }
+
   .contact-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
   }
 
   .article-contact,
@@ -50,7 +59,7 @@
   .contact-tools a {
     font-size: 3vw;
     border: 1px solid black;
-    border-radius: 50%;
+    border-radius: 1.2vw;
     width: 13%;
     padding: 1%;
     background: linear-gradient(to bottom, #4ea0d7, #472ac0);
@@ -60,14 +69,61 @@
   }
 
   .contact-tools a:hover {
-    box-shadow: none;
+    box-shadow: -2px -2px 10px #472ac0;
   }
 
   .main-contact {
     display: flex;
     flex-direction: column;
-    gap: 1.5vw;
+    justify-content: end;
+    flex-basis: 150%;
+  }
+
+  .main-contact .form-message {
+    border: 1px solid black;
+    background: linear-gradient(to left, #472ac0, #4ea0d7);
+    padding: 5%;
+    border-radius: 1.2vw;
+  }
+
+  .form-message .form-input {
+    border: none;
+    width: 100%;
+    border-radius: 0.5vw;
+    background-color: #101630;
+    color: inherit;
+    height: 4vw;
+    padding: 2%;
+    font-size: 1.7vw;
+  }
+
+  .form-message .form-input.area {
+    min-height: 12.5vw;
+  }
+  .form-input::placeholder {
+    font-size: 1.7vw;
+  }
+
+  .form-botton {
+    display: flex;
+    justify-content: end;
+  }
+
+  .form-botton .btn-send {
+    padding: 0.8vw 1.7vw 0.8vw 1.7vw;
+    border-radius: 1.2vw;
+    font-size: 1.7vw;
+    border: none;
+    background-color: #101630;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 10px #101630;
+  }
+
+  .form-botton .btn-send:hover {
+    box-shadow: none;
   }
 }
 
@@ -77,61 +133,123 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    color: #e3e3e3;
-    gap: 40px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    gap: 5.5vw;
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
 
   .contact h3 {
-    font-style: normal;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: auto;
+    font-weight: bold;
+    font-size: 5vw;
+  }
+
+  .title-contact {
+    font-weight: bold;
+    font-size: 4.9vw;
+    letter-spacing: 0.2vw;
+    color: #4ea0d7;
   }
 
   .contact-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4.5vw;
   }
 
   .article-contact,
   .main-contact {
     text-align: left;
-    font-size: 13px;
+    font-size: 3.7vw;
   }
 
-  .main-contact {
+  .icon-contact {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    gap: 1.2vw;
+    margin-top: 5%;
   }
 
-  .main-contact a {
+  .article-contact .icon-contact a {
     text-decoration: none;
-    color: #e3e3e3;
   }
 
   .contact-tools {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    align-items: end;
-    border: 1px solid whitesmoke;
-    padding: 5px 5px 5px 15px;
-    border-radius: 10px;
+    gap: 2vw;
+    align-items: start;
     transition: 0.5s ease;
   }
 
-  .contact-tools i {
-    font-size: 44px;
-    color: #828282;
+  .contact-tools a {
+    font-size: 5vw;
+    border: 1px solid black;
+    border-radius: 1.2vw;
+    width: 13%;
+    padding: 1%;
+    background: linear-gradient(to bottom, #4ea0d7, #472ac0);
+    box-shadow: -2px -4px 12px #4ea0d7;
+    text-align: center;
+    justify-content: center;
+    transition: 0.5s;
   }
 
-  .contact-tools:hover {
-    transform: translate(9px, -9px);
+  .contact-tools a:hover {
+    box-shadow: -2px -2px 10px #472ac0;
+  }
+
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 100%;
+  }
+
+  .main-contact .form-message {
+    background: linear-gradient(to left, #472ac0, #4ea0d7);
+    padding: 4%;
+    border-radius: 1.8vw;
+  }
+
+  .form-message .form-input {
+    border: none;
+    width: 100%;
+    border-radius: 1vw;
+    background-color: #101630;
+    color: inherit;
+    height: 7.9vw;
+    padding: 3%;
+    font-size: 3.7vw;
+  }
+
+  .form-message .form-input.area {
+    min-height: 20vw;
+  }
+
+  .form-input::placeholder {
+    font-size: 3.7vw;
+  }
+
+  .form-botton {
+    display: flex;
+    justify-content: end;
+  }
+
+  .form-botton .btn-send {
+    padding: 1.8vw 3.7vw 1.8vw 3.7vw;
+    border-radius: 1.2vw;
+    font-size: 3.7vw;
+    border: none;
+    background-color: #101630;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px #101630;
+  }
+
+  .form-botton .btn-send:hover {
+    box-shadow: none;
   }
 }

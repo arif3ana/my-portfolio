@@ -22,7 +22,7 @@ export default function PAgeReview({ ...props }) {
           <p className='content-page'>{props.content}</p>
           <hr />
           <h4 className='client-name'>{props.name}</h4>
-          <p>{props.position}</p>
+          <p className='client-position'>{props.position}</p>
         </div>
       </div>
     </div>

@@ -29,6 +29,7 @@ export default function FirstPage({
           providing a great digital experience.
         </p>
         <SosialIcons
+          className={"hero"}
           githubClicked={githubClicked}
           linkedlinClicked={linkedlinClicked}
           instagramClicked={instagramClicked}

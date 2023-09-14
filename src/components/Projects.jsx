@@ -1,19 +1,16 @@
 import React from "react";
-import web from "../img/web.webp";
-// import mydiary from "../img/mydiary-project.jpg";
 import Modal from "./Modal";
 import Card from "./Card";
-import Button from "./Button";
 import { projectData } from "../utils/projectsData";
+import { Fragment } from "react";
 export default function Projects() {
   return (
     <div className='projects container'>
       <h3 className='article-project-title'>PORTFOLIO</h3>
       <div className='list-project'>
         {projectData.map((proyek, index) => (
-          <>
+          <Fragment key={`${proyek.id}-${index}`}>
             <Card
-              key={`arif-${proyek.id}`}
               id={proyek.id}
               classContainer={"projects"}
               image={proyek.image}
@@ -23,7 +20,7 @@ export default function Projects() {
               content={proyek.description.split(" ").slice(0, 49).join(" ")}
             />
             <Modal data={proyek} index={index} />
-          </>
+          </Fragment>
         ))}
       </div>
       <div className='btn-view-project'>

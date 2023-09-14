@@ -1,8 +1,13 @@
 import React from "react";
 
-function SosialIcons({ instagramClicked, linkedlinClicked, githubClicked }) {
+function SosialIcons({
+  instagramClicked,
+  linkedlinClicked,
+  githubClicked,
+  className,
+}) {
   return (
-    <div className='icons'>
+    <div className={`icons-${className}`}>
       <a
         onClick={instagramClicked}
         href='https://www.instagram.com/arif.3ana/'

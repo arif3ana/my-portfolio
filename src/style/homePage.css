@@ -56,13 +56,13 @@
   .article {
     font-size: 1.7vw;
   }
-  .icons {
+  .icons-hero {
     display: flex;
     width: 100%;
     gap: 6%;
   }
 
-  .icons a {
+  .icons-hero a {
     color: #b3b1b1;
     font-size: 1.7vw;
     padding: 2.5%;
@@ -131,14 +131,14 @@
     font-size: 3.7vw;
   }
 
-  .icons {
+  .icons-hero {
     display: flex;
     width: 100%;
     gap: 6%;
     justify-content: center;
   }
 
-  .icons a {
+  .icons-hero a {
     color: #b3b1b1;
     font-size: 3.7vw;
     padding: 2.5%;

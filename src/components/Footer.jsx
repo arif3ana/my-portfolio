@@ -2,14 +2,22 @@ import React from "react";
 import SosialIcons from "./SosialIcons";
 export default function Footer() {
   return (
-    <footer>
-      <hr />
-      <div className='content-footer'>
-        <p className='text-footer'>
-          Copyright © {new Date().getFullYear()} Arif triana
-        </p>
-        <SosialIcons />
+    <div className='content-footer container'>
+      <div className='footer-main-content'>
+        <div>
+          <h3 className='footer-title'>Arif</h3>
+          <p className='footer-slogan'>
+            We Want to Help Your Company Succeed Online and Bring Your Ideas to
+            Life Digitally.
+          </p>
+        </div>
+        <SosialIcons className={"footer"} />
       </div>
-    </footer>
+      <hr />
+      <p className='text-footer'>
+        © {new Date().getFullYear()} Arif Triana. Created By Arif Triana
+      </p>
+      {/* All Rights Reserved. */}
+    </div>
   );
 }

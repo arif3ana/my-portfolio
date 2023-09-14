@@ -17,19 +17,19 @@ export default function About() {
       focus on both frontend and backend website development. I am committed to
       continuous learning and innovation in this field.{" "}
       <a href='#' className='show'>
-        ...Read More
+        .....Read More
       </a>
     </p>
   );
 
   const what = (
     <p className='about-article'>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam doloremque
-      quaerat tempora, harum provident, blanditiis temporibus repellendus ab
-      optio placeat ex obcaecati cum tenetur voluptatem! Earum, tenetur nulla
-      excepturi ab dolores culpa nostrum. Error illo assumenda praesentium
-      tenetur expedita, iste eum placeat illum reiciendis quas, hic nam cum
-      recusandae voluptas.
+      I am an end-to-end website development. My responsibilities include
+      website planning, design and development, both front-end (user interface)
+      and back-end (logic and database). I work closely with clients to realize
+      their vision, ensuring that the site is fit for purpose, performs
+      optimally, and is secure. My goal is to deliver responsive and optimized
+      web solutions to my clients.
     </p>
   );
 
