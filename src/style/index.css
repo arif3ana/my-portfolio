@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "../style/navbar.css";
+@import "../style/homePage.css";
+@import "../style/about.css";
+@import "../style/service.css";
+@import "../style/projects.css";
+@import "../style/review.css";
+@import "../style/contact.css";
+@import "../style/footer.css";
+@import "../style/showAbout.css";
+@import "../style/showPortfolio.css";
 
 * {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "PT Sans", sans-serif;
   color: #e1e4edd7;
   -webkit-font-smoothing: antialiased;

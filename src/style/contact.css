@@ -58,7 +58,6 @@
 
   .contact-tools a {
     font-size: 3vw;
-    border: 1px solid black;
     border-radius: 1.2vw;
     width: 13%;
     padding: 1%;
@@ -80,7 +79,6 @@
   }
 
   .main-contact .form-message {
-    border: 1px solid black;
     background: linear-gradient(to left, #472ac0, #4ea0d7);
     padding: 5%;
     border-radius: 1.2vw;
@@ -184,7 +182,6 @@
 
   .contact-tools a {
     font-size: 5vw;
-    border: 1px solid black;
     border-radius: 1.2vw;
     width: 13%;
     padding: 1%;

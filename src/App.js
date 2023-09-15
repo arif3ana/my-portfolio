@@ -1,90 +1,25 @@
-import Navbar from "./components/navbar";
-import HomePage from "./components/HomePage";
-import About from "./components/About";
-import Service from "./components/Service";
-import Projects from "./components/Projects";
-import Review from "./components/Review";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import ReactGA from "react-ga4";
-import { reviewer } from "./utils/projectsData";
-import "bootstrap/dist/css/bootstrap.css";
-import "./style/navbar.css";
-import "./style/homePage.css";
-import "./style/about.css";
-import "./style/service.css";
-import "./style/projects.css";
-import "./style/review.css";
-import "./style/contact.css";
-import "./style/footer.css";
-
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./page/Home";
+import Show_about from "./page/Show_about";
+import Show_portfolio from "./page/Show_portfolio";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
-  // integration google analytic
-  ReactGA.initialize("G-5QB4CC83T1");
-  const handleIconClick = () => {
-    ReactGA.event({
-      category: "Social media",
-      action: "Social media Link Clicked",
-      label: "icons Sosial media",
+  useEffect(() => {
+    AOS.init({
+      once: true,
     });
-  };
-
-  const handleEmailClick = () => {
-    ReactGA.event({
-      category: "Email contact",
-      action: "Email contact Link Clicked",
-      label: "Email Clicked",
-    });
-  };
-
-  const handleWaClick = () => {
-    ReactGA.event({
-      category: "Whatsaap contact",
-      action: "Whatsaap contact Link Clicked",
-      label: "Whatsaap Clicked",
-    });
-  };
-
+    AOS.refresh();
+  }, []);
   return (
-    <>
-      <header>
-        <Navbar />
-      </header>
-      <section>
-        <HomePage iconsClick={handleIconClick} />
-      </section>
-      <main>
-        <article id='about'>
-          <About />
-        </article>
-        <article id='projects'>
-          <Projects />
-        </article>
-        <article id='service'>
-          <Service />
-          {reviewer.map((review) => {
-            if (!review.name || !review.content) {
-              return null;
-            }
-            return (
-              <Review
-                key={review.id}
-                name={review.name}
-                position={review.position}
-                content={review.content}
-                image={review.image}
-              />
-            );
-          })}
-        </article>
-        <article id='contact'>
-          <Contact emailClick={handleEmailClick} waClick={handleWaClick} />
-        </article>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </>
+    <Router basename='/my-portfolio'>
+      <Routes>
+        <Route path='/' exact Component={Home} />
+        <Route path='/show-about' Component={Show_about} />
+        <Route path='/show-portfolio' Component={Show_portfolio} />
+      </Routes>
+    </Router>
   );
 }
 

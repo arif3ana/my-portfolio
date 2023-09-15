@@ -3,12 +3,14 @@ import Modal from "./Modal";
 import Card from "./Card";
 import { projectData } from "../utils/projectsData";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 export default function Projects() {
+  const limitData = projectData.slice(0, 3);
   return (
     <div className='projects container'>
       <h3 className='article-project-title'>PORTFOLIO</h3>
       <div className='list-project'>
-        {projectData.map((proyek, index) => (
+        {limitData.map((proyek, index) => (
           <Fragment key={`${proyek.id}-${index}`}>
             <Card
               id={proyek.id}
@@ -24,9 +26,9 @@ export default function Projects() {
         ))}
       </div>
       <div className='btn-view-project'>
-        <a href='#' className='btn-view'>
+        <Link to='/show-portfolio' className='btn-view'>
           View all
-        </a>
+        </Link>
       </div>
     </div>
   );

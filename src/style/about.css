@@ -102,12 +102,15 @@
     font-weight: 550;
     font-size: 1.8vw;
     letter-spacing: 2%;
+    text-decoration: none;
+    color: inherit;
     border: none;
     background: linear-gradient(to right, #4ea0d7, #472ac0);
     transition: 0.5s;
   }
 
   .btn-hire:hover {
+    color: inherit;
     background: linear-gradient(to left, #4ea0d7, #472ac0);
   }
 
@@ -201,7 +204,7 @@
     margin-bottom: 7%;
     margin-top: 7%;
     box-sizing: border-box;
-    height: 83vw;
+    height: 77vw;
   }
 
   .about-content .nav-about {
@@ -265,6 +268,8 @@
     border-radius: 2vw;
     font-weight: 550;
     font-size: 3.7vw;
+    text-decoration: none;
+    color: inherit;
     letter-spacing: 2%;
     border: none;
     background: linear-gradient(to right, #4ea0d7, #472ac0);
@@ -272,6 +277,7 @@
   }
 
   .btn-hire:hover {
+    color: inherit;
     background: linear-gradient(to left, #4ea0d7, #472ac0);
   }
 

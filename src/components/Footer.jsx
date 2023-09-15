@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <h3 className='footer-title'>Arif</h3>
           <p className='footer-slogan'>
-            We Want to Help Your Company Succeed Online and Bring Your Ideas to
+            I Want to Help Your Company Succeed Online and Bring Your Ideas to
             Life Digitally.
           </p>
         </div>

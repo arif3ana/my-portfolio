@@ -6,7 +6,11 @@ export default function Service() {
     <div className='service container'>
       <h3 className='service-title'>SERVICES</h3>
       <div className='service-content container'>
-        <div className='service-body' data-aos='fade-right'>
+        <div
+          className='service-body'
+          data-aos='fade-up'
+          data-aos-anchor-placement='top-center'
+          data-aos-duration='1500'>
           <img src={developer} alt='developer icon ' loading='lazy' />
           <p className='title'>Web Developer</p>
           <p className='description'>
@@ -14,7 +18,11 @@ export default function Service() {
             its optimal performance and a good user experience.
           </p>
         </div>
-        <div className='service-body' data-aos='fade-left'>
+        <div
+          className='service-body'
+          data-aos='fade-up'
+          data-aos-anchor-placement='top-center'
+          data-aos-duration='2000'>
           <img src={design} alt='web design icon ' loading='lazy' />
           <p className='title'>Web Design</p>
           <p className='description'>

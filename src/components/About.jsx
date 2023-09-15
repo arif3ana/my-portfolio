@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Button from "./Button";
 import html from "../img/html.png";
 import css from "../img/CSS.png";
 import js from "../img/js.png";
 import php from "../img/php.png";
 import react from "../img/React.png";
 import laravel from "../img/laravel.png";
+import { Link } from "react-router-dom";
 export default function About() {
   const who = (
     <p className='about-article'>
@@ -16,9 +16,9 @@ export default function About() {
       insights into technology. I specialize in full-stack development with a
       focus on both frontend and backend website development. I am committed to
       continuous learning and innovation in this field.{" "}
-      <a href='#' className='show'>
+      <Link to='/show-about' className='show'>
         .....Read More
-      </a>
+      </Link>
     </p>
   );
 
@@ -55,7 +55,8 @@ export default function About() {
     <div
       className='about container'
       data-aos='fade-up'
-      data-aos-duration='1200'>
+      data-aos-duration='1300'
+      data-aos-anchor-placement='top-center'>
       <h3 className='article-title'>ABOUT ME</h3>
       <div className='about-content'>
         <ul className='nav nav-about'>
@@ -80,35 +81,39 @@ export default function About() {
       </div>
 
       <div className='section-button'>
-        <Button type={"submit"} className={"btn-hire"} content={"HIRE ME"} />
+        <a className='btn-hire' href='#contact'>
+          HIRE ME
+        </a>
         <a href='file' download className='btn-resume'>
           RESUME
         </a>
       </div>
 
-      <p className='title-skill'>My Skills</p>
+      <p className='title-skill' data-aos='fade-up' data-aos-duration='500'>
+        My Skills
+      </p>
       <ul className='skills'>
-        <li>
+        <li data-aos='zoom-in-up'>
           <img src={html} alt='logo html' className='logo-img' />
           <p>HTML</p>
         </li>
-        <li>
+        <li data-aos='zoom-in-up'>
           <img src={css} alt='logo html' className='logo-img' />
           <p>CSS</p>
         </li>
-        <li>
+        <li data-aos='zoom-in-up'>
           <img src={js} alt='logo html' className='logo-img' />
           <p>JAVASCRIPT</p>
         </li>
-        <li>
+        <li data-aos='zoom-in-up'>
           <img src={php} alt='logo html' className='logo-img' />
           <p>PHP</p>
         </li>
-        <li>
+        <li data-aos='zoom-in-up'>
           <img src={react} alt='logo html' className='logo-img' />
           <p>React.js</p>
         </li>
-        <li>
+        <li data-aos='zoom-in-up'>
           <img src={laravel} alt='logo html' className='logo-img' />
           <p>Laravel</p>
         </li>
