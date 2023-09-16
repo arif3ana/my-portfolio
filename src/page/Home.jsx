@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/navbar";
 import HomePage from "../components/HomePage";
 import About from "../components/About";
@@ -10,13 +10,33 @@ import Footer from "../components/Footer";
 import ReactGA from "react-ga4";
 import { reviewer } from "../utils/projectsData";
 function Home() {
-  // integration google analytic
-  ReactGA.initialize("G-5QB4CC83T1");
-  const handleIconClick = () => {
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: "LandingPage",
+    });
+  }, []);
+
+  const handleLinkedlin = () => {
     ReactGA.event({
-      category: "Social media",
-      action: "Social media Link Clicked",
-      label: "icons Sosial media",
+      category: "Linkedlin ",
+      action: "Linkedlin Clicked",
+      label: "Linkedlin icon",
+    });
+  };
+  const handleInstagram = () => {
+    ReactGA.event({
+      category: "Instagram ",
+      action: "Instagram Clicked",
+      label: "Instagram icon",
+    });
+  };
+  const handleGithub = () => {
+    ReactGA.event({
+      category: "Github",
+      action: "Github Clicked",
+      label: "Github icon",
     });
   };
 
@@ -42,7 +62,11 @@ function Home() {
         <Navbar />
       </header>
       <section>
-        <HomePage iconsClick={handleIconClick} />
+        <HomePage
+          linkedlinClicked={handleLinkedlin}
+          instagramClicked={handleInstagram}
+          githubClicked={handleGithub}
+        />
       </section>
       <main>
         <article id='about'>
@@ -73,7 +97,11 @@ function Home() {
         </article>
       </main>
       <footer>
-        <Footer />
+        <Footer
+          linkedlinClicked={handleLinkedlin}
+          instagramClicked={handleInstagram}
+          githubClicked={handleGithub}
+        />
       </footer>
     </>
   );

@@ -94,27 +94,42 @@ export default function About() {
       </p>
       <ul className='skills'>
         <li data-aos='zoom-in-up'>
-          <img src={html} alt='logo html' className='logo-img' />
+          <img src={html} alt='logo html' className='logo-img' loading='lezy' />
           <p>HTML</p>
         </li>
         <li data-aos='zoom-in-up'>
-          <img src={css} alt='logo html' className='logo-img' />
+          <img src={css} alt='logo css' className='logo-img' loading='lezy' />
           <p>CSS</p>
         </li>
         <li data-aos='zoom-in-up'>
-          <img src={js} alt='logo html' className='logo-img' />
+          <img
+            src={js}
+            alt='logo javascript'
+            className='logo-img'
+            loading='lezy'
+          />
           <p>JAVASCRIPT</p>
         </li>
         <li data-aos='zoom-in-up'>
-          <img src={php} alt='logo html' className='logo-img' />
+          <img src={php} alt='logo php' className='logo-img' loading='lezy' />
           <p>PHP</p>
         </li>
         <li data-aos='zoom-in-up'>
-          <img src={react} alt='logo html' className='logo-img' />
+          <img
+            src={react}
+            alt='logo reactjs'
+            className='logo-img'
+            loading='lezy'
+          />
           <p>React.js</p>
         </li>
         <li data-aos='zoom-in-up'>
-          <img src={laravel} alt='logo html' className='logo-img' />
+          <img
+            src={laravel}
+            alt='logo laravel'
+            className='logo-img'
+            loading='lezy'
+          />
           <p>Laravel</p>
         </li>
       </ul>

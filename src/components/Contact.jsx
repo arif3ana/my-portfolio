@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Button from "./Button";
 export default function Contact({ emailClick, waClick }) {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(
+            "Your message has been sent to Arif\n Thank you for your email. I really appreciate it."
+          );
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Notification: Failed to Send Email message");
+        }
+      );
+
+    e.target.reset();
+  };
   return (
     <div className='contact container'>
       <h3>CONTACT</h3>
@@ -42,21 +68,23 @@ export default function Contact({ emailClick, waClick }) {
           </div>
         </div>
         <div className='main-contact'>
-          <form className='form-message'>
+          <form className='form-message' ref={form} onSubmit={sendEmail}>
             <div className='mb-2'>
               <input
                 type='text'
                 className='form-input'
-                id='name'
+                name='user_name'
                 placeholder='Name'
+                required
               />
             </div>
             <div className='mb-2'>
               <input
                 type='email'
                 className='form-input'
-                id='email'
+                name='user_email'
                 placeholder='Email'
+                required
               />
             </div>
             <div>
@@ -64,7 +92,8 @@ export default function Contact({ emailClick, waClick }) {
                 type='text'
                 className='form-input area'
                 placeholder='Leave a message here'
-                id='message'
+                name='message'
+                required
                 rows='3'></textarea>
             </div>
             <div className='form-botton'>

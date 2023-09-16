@@ -9,9 +9,8 @@ export default function Service() {
         <div
           className='service-body'
           data-aos='fade-up'
-          data-aos-anchor-placement='top-center'
-          data-aos-duration='1500'>
-          <img src={developer} alt='developer icon ' loading='lazy' />
+          data-aos-duration='1200'>
+          <img src={developer} alt='developer icon' loading='lazy' />
           <p className='title'>Web Developer</p>
           <p className='description'>
             Development, programming and maintenance of the website to ensure
@@ -21,8 +20,7 @@ export default function Service() {
         <div
           className='service-body'
           data-aos='fade-up'
-          data-aos-anchor-placement='top-center'
-          data-aos-duration='2000'>
+          data-aos-duration='1700'>
           <img src={design} alt='web design icon ' loading='lazy' />
           <p className='title'>Web Design</p>
           <p className='description'>

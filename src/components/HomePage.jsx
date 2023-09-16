@@ -11,7 +11,7 @@ export default function FirstPage({
       <div className='image'>
         <img
           src={profile}
-          alt='profile vector'
+          alt='photo profile arif triana'
           className='main-profile'
           loading='lazy'
         />

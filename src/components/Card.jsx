@@ -15,7 +15,8 @@ function Card({
         <img
           src={image}
           className={`card-img ${classImage}`}
-          alt={`Copyright © ${new Date().getFullYear()} created by Arif Triana`}
+          alt={`© ${new Date().getFullYear()} created by Arif Triana`}
+          loading='lezy'
         />
       </div>
       <div className='card-body'>

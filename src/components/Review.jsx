@@ -7,7 +7,7 @@ export default function PAgeReview({ ...props }) {
       <div className='content'>
         <img
           src={!props.image ? dumy : props.image}
-          alt={props.position}
+          alt={`${props.name} | ${props.position}`}
           data-aos='fade-right'
           data-aos-offset='300'
           data-aos-easing='ease-in-sine'

@@ -73,7 +73,7 @@ export default function Modal({ data, index }) {
               <img
                 src={data.image}
                 className='card-img-top img-box'
-                alt={`Copyright © ${new Date().getFullYear()} created by Arif Triana`}
+                alt={`© ${new Date().getFullYear()} created by Arif Triana`}
                 loading='lazy'
               />
               <div className='modal-article'>{paragraphElements}</div>

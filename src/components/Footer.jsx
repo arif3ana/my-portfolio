@@ -1,6 +1,10 @@
 import React from "react";
 import SosialIcons from "./SosialIcons";
-export default function Footer() {
+export default function Footer({
+  instagramClicked,
+  linkedlinClicked,
+  githubClicked,
+}) {
   return (
     <div className='content-footer container'>
       <div className='footer-main-content'>
@@ -11,7 +15,12 @@ export default function Footer() {
             Life Digitally.
           </p>
         </div>
-        <SosialIcons className={"footer"} />
+        <SosialIcons
+          className={"footer"}
+          instagramClicked={instagramClicked}
+          linkedlinClicked={linkedlinClicked}
+          githubClicked={githubClicked}
+        />
       </div>
       <hr />
       <p className='text-footer'>

@@ -4,9 +4,15 @@ import Card from "../components/Card";
 import Modal from "../components/Modal";
 import { projectData } from "../utils/projectsData";
 import { Fragment, useEffect } from "react";
+import ReactGA from "react-ga4";
 function Show_portfolio() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+      title: "Portfolio Page",
+    });
   }, []);
   return (
     <>
